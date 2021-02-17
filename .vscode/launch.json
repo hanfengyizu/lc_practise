@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "655_checkPossibility",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "/home/adam/code_house/leetcode/655_checkPossibility/Main.go"
+        },
+        {
             "name": "566_matrixReshape",
             "type": "go",
             "request": "launch",

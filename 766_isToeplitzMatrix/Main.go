@@ -42,8 +42,8 @@ func isToeplitzMatrix(matrix [][]int) bool {
 	}
 
 	for j := 1; j < M; j++ {
-		start := matrix[j][0]
-		m, n := j+1, 0+1
+		start = matrix[j][0]
+		m, n = j+1, 0+1
 		for m < M && n < N {
 			if matrix[m][n]^start != 0 {
 				return false

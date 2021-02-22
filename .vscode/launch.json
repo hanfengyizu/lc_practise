@@ -5,6 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "766_isToeplitzMatrix",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "/home/adam/code_house/leetcode/766_isToeplitzMatrix/Main.go"
+        },
+    
+        {
             "name": "1438_longestSubarray",
             "type": "go",
             "request": "launch",

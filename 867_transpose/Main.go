@@ -16,6 +16,29 @@ func Test2() {
 }
 func transpose(matrix [][]int) [][]int {
 	M := len(matrix)
+	if M == 0 {
+		return matrix
+	}
+	N := len(matrix[0])
+	newMatrix := make([][]int, N)
+	var arr []int
+	j := 0
+	for i := 0; i < N; i++ {
+		arr = []int{}
+		for j = 0; j < M; j++ {
+			arr = append(arr, matrix[j][i])
+		}
+		newMatrix[i] = arr
+	}
+
+	return newMatrix
+}
+
+func transposeV1(matrix [][]int) [][]int {
+	M := len(matrix)
+	if M == 0 {
+		return matrix
+	}
 	N := len(matrix[0])
 	newMatrix := make([][]int, N)
 	for i := 0; i < N; i++ {
